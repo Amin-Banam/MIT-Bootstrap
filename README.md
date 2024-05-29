@@ -1,7 +1,7 @@
 # MIT-Bootstrap
 ![viewfinal](assets/img/MIT-247Solar-home.jpg)
 
-- [Demo Project](https://amin-banam.github.io/Persian_temp/)
+- [Demo Project](https://amin-banam.github.io/MIT-Bootstrap/)
 
 - Developed by amin-banam
 
