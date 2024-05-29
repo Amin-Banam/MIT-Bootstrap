@@ -1,0 +1,720 @@
+$-nav-color: rgb(117,0,20);
+$-icon-color: rgb(255, 20, 35);
+#main{
+    >header{
+        >.nav{
+            @media screen and (max-width:1099px) {
+                z-index: 5;
+            }
+            width: 100%;
+            >div{
+                width: 100% !important;
+                height: 80px;
+                background: $-nav-color ;
+                top: 0;
+                left: 0;
+                >a{
+                    img{
+                        width: 90% !important;
+                    }
+                }
+                >ul{
+                    >li{
+                        font-weight: 600;
+                        margin: 0 1%;
+                        &:nth-of-type(4){
+                            @media screen and (max-width:895px) {
+                                display: none !important;
+                            }
+                        }
+                        &:nth-of-type(5){
+                            @media screen and (max-width:1020px) {
+                                display: none !important;
+                            }
+                        }
+                        &:nth-of-type(6){
+                            @media screen and (max-width:1080px) {
+                                display: none !important;
+                            }
+                        }
+                        &:nth-of-type(7),
+                        &:nth-of-type(8){
+                            @media screen and (max-width:1115px) {
+                                display: none !important;
+                            }   
+                        }
+                        &:nth-of-type(9){
+                            @media screen and (max-width:1115px) {
+                                display: flex !important;
+                            }
+                            >a{
+                                color: white;
+                                text-decoration: none;
+                            }
+                        }
+                        >a{
+                            &:hover{
+                                border-bottom: 2px solid $-icon-color;
+                            }
+                            
+                        }
+    
+                    }
+                }
+                >span:nth-of-type(1){
+                    width: 6%;
+                    >a{
+                        background-color: $-icon-color;
+                    }    
+                }
+            }
+        }
+        section{
+            
+            >div{
+                display: flex;
+                flex-wrap: wrap;
+                // justify-content: end;
+                >aside{
+                    width: 30% !important;
+                    @media screen and (min-width:1100px) and (max-width:1116px) { 
+                        width: 35% !important;
+                    }
+                    @media screen and (max-width:1099px) {
+                        width: 100% !important;
+                    }
+                    >section{
+                        @media screen and (min-width:1100px) and (max-width:1116px) { 
+                            width: 35% !important;
+                        }
+                        @media screen and (max-width:1099px) {
+                            width: 100% !important;
+                            position: static !important;
+                            margin-top: 80px !important;
+                            // border: 1px solid blue;
+                        }
+                        width: 30% !important;
+                        position: fixed;
+                        top: 80px;
+                        left: 0;
+                        background-color: #f7f7f7;
+                        >div{
+                            @media screen and (max-width:1099px) {
+                                height: auto !important;
+                            }
+                            height: calc(100vh - 80px);
+                            div{
+                                &:nth-of-type(1){
+                                    @media screen and (max-width:1099px) {
+                                        width: 100% !important;
+                                    }
+                                    >span{
+                                        @media screen and (max-width:1099px) {
+                                            width: 50% !important;
+                                        }
+                                        @media screen and (max-width:720px) {
+                                            width: 100% !important;
+                                        }
+                                        margin-left: 7%;
+                                        font-weight: 700;
+                                    }
+                                    >label{
+                                        @media screen and (max-width:1099px) {
+                                            width: 50% !important;
+                                        }
+                                        @media screen and (max-width:720px) {
+                                            width: 100% !important;
+                                        }
+                                        width: 100% !important;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        input{
+                                            width: 85% !important;
+                                            height: 80px;
+                                            padding-left: 15%;
+                                            border: none !important;
+                                            outline: none !important;
+                                            margin-bottom: 5%;
+                                            box-shadow: 0 0 20px 1px rgb(206, 204, 204);
+                                            &:focus{
+                                                outline: auto !important;
+                                                border: 1px solid black !important;
+                                            }
+                                        }
+                                        >a{
+                                            width: auto !important;
+                                            height: auto !important;
+                                            left: 15%;
+                                            top: 42%;
+                                            // top: 50%;
+                                            transform: translate(-50% , -50%);
+
+                                        }
+                                    }
+                                }
+                                &:nth-of-type(2){
+                                    @media screen and (max-width:1099px) {
+                                        display: none !important;
+                                    }
+                                    .aside-part2{
+                                        >span{
+                                            font-weight: 700 !important ;
+                                            padding-left: 7%;
+                                        }
+                                        >div{
+                                            >ul{
+                                                div{
+                                                    >li{
+                                                        list-style-type: none;
+                                                        position: relative;
+                                                        &::before{
+                                                            content: '_';
+                                                            position: absolute;
+                                                            left: -5%;
+                                                            display: flex;
+                                                            width: 5px;
+                                                            height: 1px;
+                                                            color: $-icon-color;
+                                                        }
+                                                        a{
+                                                            display: flex !important;
+                                                            padding: 2px;
+                                                            font-weight: normal !important ;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    >section{
+                                        &:nth-of-type(2){
+                                            >span{
+                                                font-weight: 700 !important ;
+                                                padding-left: 7%;
+                                            }
+                                            >div{
+                                                padding-left: 8%;
+                                                >li{
+                                                    list-style-type: none;
+                                                    &:nth-of-type(1){
+                                                        position: relative;
+                                                        &::before{
+                                                            content: '_';
+                                                            position: absolute;
+                                                            left: -6%;
+                                                            display: flex;
+                                                            color: $-icon-color;
+                                                        }
+                                                    }
+                                                    // &:nth-of-type(2){
+                                                        
+                                                    // }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                &:nth-of-type(3){
+                                    @media screen and (max-width:1099px) {
+                                        display: none !important;
+                                    }
+                                    div{
+                                        a{
+                                            padding: 2px;
+                                        }
+                                        &:nth-of-type(1){
+                                            >a{
+                                                font-size: 1.5vw;
+                                            }
+                                            
+                                        }
+                                        &:nth-of-type(2){
+                                            >a{
+                                                &:hover{
+                                                    text-decoration: underline !important;
+                                                }
+                                            }
+                                        }
+                                        &:nth-of-type(2),
+                                        &:nth-of-type(3),
+                                        &:nth-of-type(4){
+                                            text-transform: lowercase !important;
+                                            font-size: 1.2vw !important;
+                                        }
+                                        &:nth-of-type(3),
+                                        &:nth-of-type(4){
+                                            text-transform: lowercase !important;
+                                            font-variant: small-caps;
+                                            >a{
+                                                border-bottom: 1px solid $-icon-color;
+                                                &:hover{
+                                                    color: $-icon-color !important;
+                                                }
+                                            }
+                                        }
+                                        &:nth-of-type(4){
+                                            >a{
+                                                &:nth-of-type(4),
+                                                &:nth-of-type(5),
+                                                &:nth-of-type(6),
+                                                &:nth-of-type(7){
+                                                    border-bottom: none !important;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                >section{
+                    @media screen and (min-width:1100px) and (max-width:1116px) { 
+                        max-width: 65% !important;
+                    }
+                    @media screen and (max-width:1099px) {
+                        width: 100% !important;
+                        margin-top: 0 !important;
+                    }
+                    @media screen and (min-width:1117px) {
+                        max-width: 70% !important;
+                    }
+                    margin-top: 80px !important;
+                    >div{
+                        max-width: 100%;
+                        >div:nth-of-type(1){
+                            height: 110px;
+                            background-color: #d4d4d4;
+                            @media screen and (max-width:720px) {
+                                height: auto !important;
+                            }
+                            >span{
+                                @media screen and (max-width:720px) {
+                                    display: none !important;
+                                }
+                                width: 80px;
+                                height: 80px;
+                                background-image: url(../img/thumbnail-mit-dome_0.jpg);
+                                background-size: cover;
+                                background-repeat: no-repeat;
+                            }
+                            >p{
+                                @media screen and (max-width:720px) {
+                                    margin: 1% 0 !important;
+                                }
+                                font-weight: 400;
+                                >a{
+                                    border-bottom: 1px solid $-icon-color;
+                                    font-weight: 600;
+                                    &:hover{
+                                        color: $-icon-color !important;
+                                    }
+                                }
+                            }
+                        }
+                        >figure{
+                            width: 100%;
+                            >img{
+                                width: 95%;
+                            }
+                            .caption{
+                                @media screen and (max-width:720px) {
+                                    width: 100% !important;
+                                }
+                                max-width: 85%;
+                                font-size: 20px;
+                                text-align: start !important;
+                                font-weight: 600;
+                                >a{
+                                    border-bottom: 1px solid $-icon-color;
+                                    font-weight: 600;
+                                    &:hover{
+                                        color: $-icon-color !important;
+                                    }
+                                }
+                            }
+    
+                        }
+                        >div:nth-of-type(2){
+                            @media screen and (max-width:720px) {
+                                width: 100% !important;
+                                display: flex !important;
+                                justify-content: space-evenly !important;
+                                flex-wrap: wrap !important;
+                                padding: 0 !important;
+                            }
+                            >span{
+                                &:nth-of-type(2),
+                                &:nth-of-type(6){
+                                    >a{
+                                        font-weight: 600;
+                                        color: black;
+                                        border-bottom: 1px solid $-icon-color !important;
+                                        &:hover{
+                                        color: $-icon-color !important;
+                                        }
+                                    }
+                                }
+                                &:nth-of-type(4),
+                                &:nth-of-type(5){
+                                    >svg{
+                                        fill: $-nav-color !important;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    section{
+                        >div{
+                            >div:nth-of-type(1){
+                                >h4{
+                                    font-weight: bolder;
+                                    font-size: 16px;
+                                }
+                            }
+                            >div:nth-of-type(2){
+                                @media screen and (max-width: 770px) {
+                                    flex-wrap: wrap !important;
+                                }
+                                >article:nth-of-type(1){
+                                    @media screen and (max-width: 770px) {
+                                        width: 80% !important;
+                                    }
+                                    width: 45% !important;
+                                    >figure{
+                                        >img{
+                                            // width: 90% !important;
+                                        }
+                                    }
+                                    >div{
+                                        >h4{
+                                            font-size: 16px;
+                                            font-weight: bolder;
+                                            margin-bottom: 2%;
+                                        }
+                                        >a{
+                                            // font-size: 18px !important;
+                                            font-weight: 500;
+                                            &:hover{
+                                                color: gray !important;
+                                                text-decoration: underline !important;
+                                            }
+                                        }
+                                    }
+                                }
+                                >article:nth-of-type(2){
+                                    @media screen and (max-width: 770px) {
+                                        width: 80% !important;
+                                        margin-top: 5%;
+                                    }
+                                    width: 45% !important;
+                                    >figure{
+                                        >img{
+                                            // width: 90% !important;
+                                        }
+                                    }
+                                    >div{
+                                        >h4{
+                                            font-size: 16px;
+                                            font-weight: bolder;
+                                            margin-bottom: 2%;
+                                        }
+                                        >a{
+                                            // font-size: 18px !important;
+                                            font-weight: 500;
+                                            &:hover{
+                                                color: gray !important;
+                                                text-decoration: underline !important;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            >div:nth-of-type(3){
+                                @media screen and (max-width: 770px) {
+                                    flex-wrap: wrap !important;
+                                }
+                                >article:nth-of-type(1){
+                                    @media screen and (max-width: 770px) {
+                                        width: 80% !important;
+                                        margin-top: 5% !important;
+                                    }
+                                    width: 45% !important;
+                                    >figure{
+                                        >img{
+                                            // width: 90% !important;
+                                        }
+                                    }
+                                    >div{
+                                        >h4{
+                                            font-size: 16px;
+                                            font-weight: bolder;
+                                            margin-bottom: 2%;
+                                        }
+                                        >a{
+                                            // font-size: 18px !important;
+                                            font-weight: 500;
+                                            &:hover{
+                                                color: gray !important;
+                                                text-decoration: underline !important;
+                                            }
+                                        }
+                                    }
+                                }
+                                >article:nth-of-type(2){
+                                    @media screen and (max-width: 770px) {
+                                        width: 80% !important;
+                                        margin-top: 5% !important;
+                                    }
+                                    width: 45% !important;
+                                    >figure{
+                                        >img{
+                                            // width: 90% !important;
+                                        }
+                                    }
+                                    >div{
+                                        >h4{
+                                            font-size: 16px;
+                                            font-weight: bolder;
+                                            margin-bottom: 2%;
+                                        }
+                                        >a{
+                                            // font-size: 18px !important;
+                                            font-weight: 500;
+                                            &:hover{
+                                                color: gray !important;
+                                                text-decoration: underline !important;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            >div:nth-of-type(4){
+                                @media screen and (max-width: 770px) {
+                                    flex-wrap: wrap !important;
+                                }
+                                >article:nth-of-type(1){
+                                    @media screen and (max-width: 770px) {
+                                        width: 80% !important;
+                                        margin-top: 5% !important;
+                                    }
+                                    width: 45% !important;
+                                    >figure{
+                                        >img{
+                                            // width: 90% !important;
+                                        }
+                                    }
+                                    >div{
+                                        >h4{
+                                            font-size: 16px;
+                                            font-weight: bolder;
+                                            margin-bottom: 2%;
+                                        }
+                                        >a{
+                                            // font-size: 18px !important;
+                                            font-weight: 500;
+                                            &:hover{
+                                                color: gray !important;
+                                                text-decoration: underline !important;
+                                            }
+                                        }
+                                    }
+                                }
+                                >article:nth-of-type(2){
+                                    @media screen and (max-width: 770px) {
+                                        width: 80% !important;
+                                        margin-top: 5% !important;
+                                    }
+                                    width: 45% !important;
+                                    >figure{
+                                        >img{
+                                            // width: 90% !important;
+                                        }
+                                    }
+                                    >div{
+                                        >h4{
+                                            font-size: 16px;
+                                            font-weight: bolder;
+                                            margin-bottom: 2%;
+                                        }
+                                        >a{
+                                            // font-size: 18px !important;
+                                            font-weight: 500;
+                                            &:hover{
+                                                color: gray !important;
+                                                text-decoration: underline !important;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    // end sec 1///////////////////////
+                    >footer{
+
+                        background-color: #620011;
+
+                        >div:nth-of-type(1){
+                            >p{
+                                >a{
+                                    border-bottom: 1px solid red;
+                                    &:hover{
+                                        color: red !important;
+                                    }
+                                }
+                            }
+                        }
+                        >div:nth-of-type(2){
+                            >a{
+                                // width: 45%;
+                                // padding: 6% !important;
+                                border: 1px solid red;
+                                font-size: 14px;
+                                &:hover{
+                                    background-color: red;
+                                    color: #620011 !important;
+                                }
+                            }
+                        }
+                    }
+                    >section{
+                        @media screen and (min-width:1100px) {
+                            display: none;
+                        }
+                        @media screen and (max-width:1099px) {
+                            display: block;
+                        }
+                        >div{
+                            >div:nth-of-type(1){
+                                @media screen and (max-width:1099px) {
+                                    // display: none !important;
+                                }
+                                .aside-part2{
+                                    >div{
+                                        >span{
+                                            font-weight: 800 !important ;
+                                            padding-left: 7%;
+    
+                                        }
+                                    }
+                                    >div{
+                                        >ul{
+                                            div{
+                                                >li{
+                                                    list-style-type: none;
+                                                    // position: relative;
+                                                    // &::before{
+                                                    //     content: '_';
+                                                    //     position: absolute;
+                                                    //     left: -5%;
+                                                    //     display: flex;
+                                                    //     width: 5px;
+                                                    //     height: 1px;
+                                                    //     color: $-icon-color;
+                                                    // }
+                                                    a{
+                                                        display: flex !important;
+                                                        padding: 2px;
+                                                        font-weight: normal !important ;
+                                                        text-decoration: underline red !important;
+                                                        &:hover{
+                                                            color: red !important;
+                                                        }
+                                                        // border-bottom: 1px solid red !important;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                >section{
+                                    &:nth-of-type(2){
+                                        >span{
+                                            font-weight: 800 !important ;
+                                            padding-left: 7%;
+                                        }
+                                        >div{
+                                            padding-left: 8%;
+                                            >li{
+                                                list-style-type: none;
+                                                &:nth-of-type(1){
+                                                    position: relative;
+                                                    &::before{
+                                                        content: '_';
+                                                        position: absolute;
+                                                        left: -6%;
+                                                        display: flex;
+                                                        color: $-icon-color;
+                                                    }
+                                                }
+                                                // &:nth-of-type(2){
+                                                    
+                                                // }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            >div:nth-of-type(2){
+                                @media screen and (max-width:1099px) {
+                                    // display: none !important;
+                                }
+                                div{
+                                    span{
+                                        font-weight: 700 !important;
+                                    }
+                                    a{
+                                        padding: 2px;
+                                    }
+                                    &:nth-of-type(1){
+                                        >a{
+                                            font-size: 17px;
+                                        }
+                                        
+                                    }
+                                    &:nth-of-type(2){
+                                        >a{
+                                            &:hover{
+                                                text-decoration: underline !important;
+                                            }
+                                        }
+                                    }
+                                    &:nth-of-type(2),
+                                    &:nth-of-type(3),
+                                    &:nth-of-type(4){
+                                        text-transform: lowercase !important;
+                                        font-size: 16px !important;
+                                    }
+                                    &:nth-of-type(3),
+                                    &:nth-of-type(4){
+                                        text-transform: lowercase !important;
+                                        font-variant: small-caps;
+                                        >a{
+                                            border-bottom: 1px solid $-icon-color;
+                                            &:hover{
+                                                color: $-icon-color !important;
+                                            }
+                                        }
+                                    }
+                                    &:nth-of-type(4){
+                                        >a{
+                                            &:nth-of-type(4),
+                                            &:nth-of-type(5),
+                                            &:nth-of-type(6),
+                                            &:nth-of-type(7){
+                                                border-bottom: none !important;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+}
